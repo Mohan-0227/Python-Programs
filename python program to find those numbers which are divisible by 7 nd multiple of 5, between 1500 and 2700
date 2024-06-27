@@ -1,0 +1,13 @@
+# Initialize an empty list to store the numbers
+numbers_list = []
+
+# Iterate through numbers from 1500 to 2700 (inclusive)
+for num in range(1500, 2701):
+    # Check if the number is divisible by 7 and a multiple of 5
+    if num % 7 == 0 and num % 5 == 0:
+        # If true, append the number to the list
+        numbers_list.append(num)
+
+# Print the list of numbers that satisfy the condition
+print("Numbers divisible by 7 and multiples of 5 between 1500 and 2700:")
+print(numbers_list)
