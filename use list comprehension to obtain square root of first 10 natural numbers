@@ -1,0 +1,8 @@
+import math
+
+# Using list comprehension to calculate square roots of first 10 natural numbers
+square_roots = [math.sqrt(i) for i in range(1, 11)]
+
+# Print the square roots
+print("Square roots of the first 10 natural numbers:")
+print(square_roots)
