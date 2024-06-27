@@ -1,0 +1,47 @@
+# List of tree names
+tree_names = ["Mango tree", "Coconut tree", "Papaya tree", "Apple tree", "Banana tree", "Blackberry tree"]
+
+# 1. Print the list of tree names
+print("List of tree names:")
+print(tree_names)
+print()
+
+# 2. Accessing specific elements
+# Second tree name
+second_tree = tree_names[1]
+print("Second tree name:", second_tree)
+
+# Last tree name
+last_tree = tree_names[-1]
+print("Last tree name:", last_tree)
+print()
+
+# 3. Sorting the list alphabetically
+sorted_trees = sorted(tree_names)
+print("Sorted tree names:")
+print(sorted_trees)
+print()
+
+# 4. Counting trees with specific names
+# Count trees containing 'tree' in their name
+count_with_tree = sum('tree' in name.lower() for name in tree_names)
+print("Number of tree names containing 'tree':", count_with_tree)
+
+# Count trees starting with 'M'
+count_starting_with_M = sum(name.startswith('M') for name in tree_names)
+print("Number of tree names starting with 'M':", count_starting_with_M)
+print()
+
+# 5. Adding a new tree name
+new_tree_name = "Cherry tree"
+tree_names.append(new_tree_name)
+print("Updated list of tree names after adding 'Cherry tree':")
+print(tree_names)
+print()
+
+# 6. Removing a tree name
+# Remove "Papaya tree"
+if "Papaya tree" in tree_names:
+    tree_names.remove("Papaya tree")
+print("Tree names after removing 'Papaya tree':")
+print(tree_names)
