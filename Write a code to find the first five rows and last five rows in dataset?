@@ -1,0 +1,15 @@
+import pandas as pd
+
+# Assuming your dataset is stored in a CSV file named 'dataset.csv'
+# Replace 'dataset.csv' with your actual dataset file path
+
+# Load the dataset into a pandas DataFrame
+df = pd.read_csv('dataset.csv')
+
+# Display the first five rows
+print("First five rows:")
+print(df.head())
+
+# Display the last five rows
+print("\nLast five rows:")
+print(df.tail())
