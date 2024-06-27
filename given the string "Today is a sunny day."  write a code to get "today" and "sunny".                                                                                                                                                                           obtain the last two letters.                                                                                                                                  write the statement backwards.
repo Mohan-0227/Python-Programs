@@ -1,0 +1,21 @@
+# Original string
+s = "Today is a sunny day."
+
+# Splitting the string into words
+words = s.split()
+
+# Accessing "today" and "sunny" based on their positions
+word_today = words[0].lower()  # "Today" converted to lowercase
+word_sunny = words[3].lower()  # "sunny"
+
+# Getting the last two letters
+last_two_letters = s[-2:]
+
+# Reversing the string
+reversed_statement = s[::-1]
+
+# Printing the results
+print("Word 'today':", word_today)
+print("Word 'sunny':", word_sunny)
+print("Last two letters:", last_two_letters)
+print("Reversed statement:", reversed_statement)
